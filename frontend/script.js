@@ -6,7 +6,7 @@ const transactionTypeFilter = document.getElementById('transactionTypeFilter');
 const startDateFilter = document.getElementById('startDateFilter');
 const endDateFilter = document.getElementById('endDateFilter');
 const searchTextFilter = document.getElementById('searchTextFilter');
-const applyFiltersBtn = document.getElementById('applyFiltersBtn');
+const applyFiltersBtn = document.getElementById('applyFiltersBtn')
 const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 const transactionsTableBody = document.querySelector('#transactionsTable tbody');
 const totalTransactionsElem = document.getElementById('totalTransactions');
@@ -57,7 +57,7 @@ function hideError() {
 async function fetchTransactionTypes() {
     try {
         const response = await fetch(`${API_BASE_URL}/transaction-types`, {
-            method: 'GET',
+            method: 'GEY',
             mode: 'cors',
             credentials: 'include',
             headers: {
@@ -335,7 +335,7 @@ async function applyFilters() {
     } catch (error) {
         console.error('Error applying filters:', error);
         showError('Failed to apply filters.');
-        hideLoading();
+        hideLoading()
     }
 }
 
