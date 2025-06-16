@@ -335,7 +335,7 @@ async function applyFilters() {
     } catch (error) {
         console.error('Error applying filters:', error);
         showError('Failed to apply filters.');
-        hideLoading()
+        hideLoading();
     }
 }
 
